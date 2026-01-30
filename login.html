@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login • TravelXP</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/responsive.css" />
+</head>
+
+<body>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="logo" href="./index.html">Travel<span>XP</span></a>
+
+      <nav class="nav" id="nav">
+        <a href="./index.html#home" class="nav-link">Home</a>
+        <a href="./index.html#categories" class="nav-link">Categories</a>
+        <a href="./feed.html" class="nav-link">Experiences</a>
+        <a href="./index.html#contact" class="nav-link">Contact</a>
+        <a href="./login.html" class="nav-link nav-link--btn">Login</a>
+      </nav>
+
+      <button class="burger" id="burgerBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container auth-wrap">
+        <div class="auth-card">
+          <div class="section-head">
+            <h2>Welcome back</h2>
+          </div>
+
+          <form id="loginForm" class="auth-form" novalidate>
+            <label>
+              Email
+              <input id="logEmail" type="email" placeholder="you@example.com" />
+              <small class="error" id="logEmailErr"></small>
+            </label>
+
+            <label>
+              Password
+              <div class="password-field">
+                <input id="logPassword" type="password" placeholder="Your password" />
+                <button type="button" class="toggle-password" id="logToggle">Show</button>
+              </div>
+              <small class="error" id="logPassErr"></small>
+            </label>
+
+            <button type="submit" class="btn btn-primary">Login</button>
+
+            <!-- visible message for teacher -->
+            <div class="toast" id="logToast" role="status" aria-live="polite"></div>
+
+            <p class="auth-hint">
+              No account? <a class="link" href="./register.html">Register</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> TravelXP</p>
+      <a class="link" href="#top">Back to top</a>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTopBtn" aria-label="Scroll to top">↑</button>
+
+  <div class="cookies" id="cookies">
+    <p>We use cookies to improve your experience.</p>
+    <button class="btn btn-primary btn-small" id="acceptCookies">Accept</button>
+  </div>
+
+  <script src="./js/app.js"></script>
+  <script src="./js/auth.js"></script>
+</body>
+</html>

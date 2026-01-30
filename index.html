@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TravelXP</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/responsive.css" />
+</head>
+
+<body>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="logo" href="./index.html">Travel<span>XP</span></a>
+
+      <nav class="nav" id="nav">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#categories" class="nav-link">Categories</a>
+        <a href="./feed.html" class="nav-link">Experiences</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="./login.html" class="nav-link nav-link--btn">Login</a>
+      </nav>
+
+      <button class="burger" id="burgerBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Share Your Travel Experiences</h1>
+          <p>Write stories, add places, and inspire others with your adventures.</p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="./register.html">Register</a>
+            <a class="btn btn-outline" href="./feed.html">Explore Experiences</a>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <img src="./assets/images/hero.jpg" alt="Travel hero image" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="categories">
+      <div class="container">
+        <div class="section-head">
+          <h2>Categories</h2>
+        </div>
+
+        <div class="grid grid-4">
+          <article class="card">
+            <h3>Mountains</h3>
+            <p>Hikes, peaks, views.</p>
+          </article>
+
+          <article class="card">
+            <h3>City</h3>
+            <p>Food, streets, culture.</p>
+          </article>
+
+          <article class="card">
+            <h3>Sea</h3>
+            <p>Coast, beach, sunsets.</p>
+          </article>
+
+          <article class="card">
+            <h3>Road Trip</h3>
+            <p>Stops, routes, stories.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured (updated text to match posts.json) -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head section-head-row">
+          <h2>Featured Experiences</h2>
+          <a class="btn btn-soft" href="./feed.html">Open feed →</a>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="card card-post">
+            <img src="./assets/images/post-3.jpg" alt="Quiet Lake Retreat">
+            <div class="card-body">
+              <span class="pill">Sea</span>
+              <h3>Quiet Lake Retreat</h3>
+              <p>A calm afternoon by the water—slow walks, fresh air, and total reset.</p>
+              <a class="link" href="./feed.html">Read more →</a>
+            </div>
+          </article>
+
+          <article class="card card-post">
+            <img src="./assets/images/post-2.jpg" alt="Cloudy Mountain Hike">
+            <div class="card-body">
+              <span class="pill">Mountains</span>
+              <h3>Cloudy Mountain Hike</h3>
+              <p>A peaceful trail with foggy peaks, green valleys, and a view worth the climb.</p>
+              <a class="link" href="./feed.html">Read more →</a>
+            </div>
+          </article>
+
+          <article class="card card-post">
+            <img src="./assets/images/post-1.jpg" alt="Lisbon Tram Ride">
+            <div class="card-body">
+              <span class="pill">City</span>
+              <h3>Lisbon Tram Ride</h3>
+              <p>A rainy-day ride through old streets, warm cafés, and classic yellow trams.</p>
+              <a class="link" href="./feed.html">Read more →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-muted">
+      <div class="container stats">
+        <div class="stat">
+          <h3>100+</h3>
+          <p>Experiences</p>
+        </div>
+        <div class="stat">
+          <h3>30+</h3>
+          <p>Locations</p>
+        </div>
+        <div class="stat">
+          <h3>24/7</h3>
+          <p>Inspiration</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head">
+          <h2>Contact</h2>
+        </div>
+
+        <form class="contact-form">
+          <div class="form-row">
+            <label>
+              Name
+              <input type="text" placeholder="Your name" />
+            </label>
+
+            <label>
+              Email
+              <input type="email" placeholder="you@example.com" />
+            </label>
+          </div>
+
+          <label>
+            Message
+            <textarea rows="4" placeholder="Write your message..."></textarea>
+          </label>
+
+          <button class="btn btn-primary" type="button">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> TravelXP</p>
+      <a class="link" href="#top">Back to top</a>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTopBtn" aria-label="Scroll to top">↑</button>
+
+  <div class="cookies" id="cookies">
+    <p>We use cookies to improve your experience.</p>
+    <button class="btn btn-primary btn-small" id="acceptCookies">Accept</button>
+  </div>
+
+  <script src="./js/app.js"></script>
+</body>
+</html>
