@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "title": "Lisbon Tram Ride",
+    "location": "Lisbon, Portugal",
+    "date": "2025-01-12",
+    "category": "City",
+    "image": "assets/images/post-1.jpg",
+    "excerpt": "A rainy-day ride through old streets, warm cafés, and classic yellow trams."
+  },
+  {
+    "id": 2,
+    "title": "Cloudy Mountain Hike",
+    "location": "Kazbegi, Georgia",
+    "date": "2025-02-03",
+    "category": "Mountains",
+    "image": "assets/images/post-2.jpg",
+    "excerpt": "A peaceful trail with foggy peaks, green valleys, and a view worth the climb."
+  },
+  {
+    "id": 3,
+    "title": "Quiet Lake Retreat",
+    "location": "Borjomi, Georgia",
+    "date": "2025-03-18",
+    "category": "Sea",
+    "image": "assets/images/post-3.jpg",
+    "excerpt": "A calm afternoon by the water—slow walks, fresh air, and total reset."
+  }
+]
